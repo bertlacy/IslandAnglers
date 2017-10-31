@@ -1,0 +1,1065 @@
+﻿<!DOCTYPE html>
+<html lang="en-us" class="no-js">
+
+<head>
+	<meta charset="utf-8">
+	<title>:: Island Anglers ::</title>
+	<meta name="description" content="Island Anglers.">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="dr.">
+
+	<!-- ================= Favicon ================== -->
+	<!-- Standard -->
+	<link rel="shortcut icon" href="Images/ia_logo.ico">
+	<!-- Retina iPad Touch Icon-->
+	<link rel="apple-touch-icon" sizes="144x144" href="Images/favicon-retina-ipad.png">
+	<!-- Retina iPhone Touch Icon-->
+	<link rel="apple-touch-icon" sizes="114x114" href="Images/favicon-retina-iphone.png">
+	<!-- Standard iPad Touch Icon-->
+	<link rel="apple-touch-icon" sizes="72x72" href="Images/favicon-standard-ipad.png">
+	<!-- Standard iPhone Touch Icon-->
+	<link rel="apple-touch-icon" sizes="57x57" href="Images/favicon-standard-iphone.png">
+
+	<!-- ============== Resources style ============== -->
+	<link rel="stylesheet" href="css/style.css" />
+
+	<!-- Modernizr runs quickly on page load to detect features -->
+	<script src="js/modernizr.custom.js"></script>
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900" rel="stylesheet">
+
+	<!-- Font Awesome Icons -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+	<!-- Google 'Material Design' Icons -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+
+	<!-- Main Style Sheet -->
+	<link rel="stylesheet" href="styles/style.css" />
+
+	<!-- Island Anglers JavaScript -->
+	<script type="text/javascript" src="js/IslandAnglers.js"></script>
+	<script type="text/javascript" src="js/IslandAnglers-SnackBar.js"></script>
+	<script type="text/javascript" src="js/IslandAnglers-TextToFile.js"></script>
+	<script type="text/javascript" src="js/IslandAnglers-ClockTicker.js"></script>
+
+	<!-- Parrallaxer -->
+	<!--<link rel='stylesheet' type="text/css" href="dzsparallaxer/dzsparallaxer.css" />
+	<script src="dzsparallaxer/dzsparallaxer.js" type="text/javascript"></script>-->
+
+	<!-- Navigation -->
+	<link rel="stylesheet" type="text/css" href="AnimatedBorderMenus/css/demo.css" />
+	<link rel="stylesheet" type="text/css" href="AnimatedBorderMenus/css/icons.css" />
+	<link rel="stylesheet" type="text/css" href="AnimatedBorderMenus/css/style5.css" />
+	<script type="text/javascript" src="AnimatedBorderMenus/js/modernizr.custom.js"></script>
+
+	<!-- CSS3 Full Page Background -->
+	<link rel="stylesheet" type="text/css" href="CSS3FullscreenSlideshow/css/demo.css" />
+	<link rel="stylesheet" type="text/css" href="CSS3FullscreenSlideshow/css/style1.css" />
+	<script type="text/javascript" src="CSS3FullscreenSlideshow/js/modernizr.custom.86080.js"></script>
+
+	<!-- jQuery - Magnific Popup -->
+	<script type="text/javascript" src="js/Magnific-Popup.js"></script>
+
+	<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css'>
+
+	<style>
+		/* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
+		html, body {
+			margin: 0;
+			padding: 10px;
+			-webkit-backface-visibility: hidden;
+		}
+
+		/* text-based popup styling */
+		.white-popup {
+			position: relative;
+			background: #FFF;
+			padding: 25px;
+			width: auto;
+			max-width: 400px;
+			margin: 0 auto;
+		}
+
+		/* ====== Zoom-out effect ====== */
+		.mfp-zoom-out {
+			/* start state */
+			/* animate in */
+			/* animate out */
+		}
+
+		.mfp-zoom-out .mfp-with-anim {
+			opacity: 0;
+			transition: all 0.3s ease-in-out;
+			transform: scale(1.3);
+		}
+
+		.mfp-zoom-out.mfp-bg {
+			opacity: 0;
+			transition: all 0.3s ease-out;
+		}
+
+		.mfp-zoom-out.mfp-ready .mfp-with-anim {
+			opacity: 1;
+			transform: scale(1);
+		}
+
+		.mfp-zoom-out.mfp-ready.mfp-bg {
+			opacity: 0.8;
+		}
+
+		.mfp-zoom-out.mfp-removing .mfp-with-anim {
+			transform: scale(1.3);
+			opacity: 0;
+		}
+
+		.mfp-zoom-out.mfp-removing.mfp-bg {
+			opacity: 0;
+		}
+
+		/* ====== "Hinge" close effect ====== */
+		@keyframes hinge {
+			0% {
+				transform: rotate(0);
+				transform-origin: top left;
+				animation-timing-function: ease-in-out;
+			}
+
+			20%, 60% {
+				transform: rotate(80deg);
+				transform-origin: top left;
+				animation-timing-function: ease-in-out;
+			}
+
+			40% {
+				transform: rotate(60deg);
+				transform-origin: top left;
+				animation-timing-function: ease-in-out;
+			}
+
+			80% {
+				transform: rotate(60deg) translateY(0);
+				opacity: 1;
+				transform-origin: top left;
+				animation-timing-function: ease-in-out;
+			}
+
+			100% {
+				transform: translateY(700px);
+				opacity: 0;
+			}
+		}
+
+		.hinge {
+			animation-duration: 1s;
+			animation-name: hinge;
+		}
+
+		.mfp-with-fade .mfp-content, .mfp-with-fade.mfp-bg {
+			opacity: 0;
+			transition: opacity .5s ease-out;
+		}
+
+		.mfp-with-fade.mfp-ready .mfp-content {
+			opacity: 1;
+		}
+
+		.mfp-with-fade.mfp-ready.mfp-bg {
+			opacity: 0.8;
+		}
+
+		.mfp-with-fade.mfp-removing.mfp-bg {
+			opacity: 0;
+		}
+
+		/* preview styles */
+		html {
+			font-family: "Calibri", "Trebuchet MS", "Helvetica", sans-serif;
+		}
+
+		h3 {
+			margin-top: 0;
+			font-size: 24px;
+		}
+
+		a,
+		a:visited {
+			color: #1760BF;
+			text-decoration: none;
+		}
+
+		a:hover {
+			color: #c00;
+		}
+
+		.links li {
+			margin-bottom: 5px;
+		}
+
+		h4 {
+			margin: 24px 0 0 0;
+		}
+
+		.bottom-text {
+			margin-top: 40px;
+			border-top: 2px solid #CCC;
+		}
+
+		.bottom-text a {
+			border-bottom: 1px solid #CCC;
+		}
+
+		.bottom-text p {
+			max-width: 650px;
+		}
+
+		.Accent {
+			color: #0FE0BA;
+		}
+
+		.AccentRed {
+			color: #E00F35;
+		}
+
+		.AccentBlue {
+			color: #0F35E0;
+		}
+
+		.Shadow {
+			box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.4);
+		}
+	</style>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+</head>
+
+<body>
+
+
+
+	<div id="main-div" class="main-content">
+		<!-- Page preloader -->
+		<div id="loading">
+			<div id="preloader">
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+
+		<!-- Testing Background Slideshow  ·  -->
+		<ul class="cb-slideshow">
+			<li>
+				<span>Image 01</span>
+				<div>
+					<!--<h1 style="text-align: center;">
+						<br />
+						<span class="Accent" style="margin: 5%; padding: 5%; font-size: 50pt; text-shadow: 4px 4px 4px #ffffff; font-family: 'Montserrat', Arial; font-weight: bold;">
+							COMING SOON...
+						</span>
+					</h1>-->
+				</div>
+			</li>
+			<li>
+				<span>Image 02</span>
+				<div>
+					<h1>
+						<!--<span class="polyfy-title">
+							<br />
+							<span class="AccentRed" style="margin: 5%; padding: 5%; font-size: 40pt; text-shadow: 5px 5px 5px white; font-family: 'Rock Salt', cursive; font-weight: bold;">
+								Island Anglers!
+							</span>
+							<hr style="border: 1pt solid #333; width: 50%;  box-shadow: 5px 25px 100px #ffffff; border-radius: 10px;" />
+							<br />
+						</span>-->
+					</h1>
+				</div>
+			</li>
+			<li>
+				<span>Image 03</span>
+				<div>
+					<!--<br /><br />
+
+					<p class="text-intro opacity-0">
+						<span style="color: white; font-size: 18pt; font-family: 'Montserrat', Arial; text-shadow: 1px 1px 1px gray;">
+							<br /><br />
+							An artfuly crafted, incredibly cool web space &amp; community for anglers and their pals.
+							<br /><br />
+							Check back with us soon!
+						</span>
+					</p>
+					<br /><br /><br /><br />
+
+					<a href="#" id="open-more-info" data-target="info-wrap" class="light-btn text-intro opacity-0">
+						<span style="text-shadow: 1px 1px 1px lightgray;">
+							More on Island Anglers
+						</span>
+					</a>
+
+					<a data-dialog="somedialog" class="action-btn trigger text-intro opacity-0">
+						<span style="text-shadow: 1px 1px 1px lightgray;">
+							Keep Me Notified!
+						</span>
+					</a>-->
+				</div>
+			</li>
+			<li>
+				<span>Image 04</span><div>
+					<h3></h3>
+				</div>
+			</li>
+			<li>
+				<span>Image 05</span><div>
+					<h3></h3>
+				</div>
+			</li>
+			<li>
+				<span>Image 06</span><div>
+					<h3></h3>
+				</div>
+			</li>
+		</ul>
+
+
+		<!-- Overlay -->
+		<!--<canvas id="rainy" width="1" height="1"></canvas>-->
+		<!-- Overlay -->
+		<div class="global-overlay">
+			<div class="overlay">
+				<!-- Lines Overlay -->
+				<!--<div class="overlay-dash">
+				</div>-->
+			</div>
+		</div>
+
+
+		<!-- START - Home Part -->
+		<section id="home-wrap">
+
+
+
+			<!-- Stars Overlay - Uncomment the next 3 lines to activate the effect-->
+			<!--<div id='stars'></div>
+			<div id='stars2'></div>
+			<div id='stars3'></div>-->
+			<!--<div class="content" style="background: url(Images/CoverPhotoIdea.JPG);">-->
+
+			<div id="my-container">
+				<center>
+					<!-- Your logo -->
+					<!--<img src="Images/ia-logo.png" alt="Island Anglers" class="brand-logo text-intro opacity-0" />-->
+					<!-- Welcome Text -->
+					<h1 class="text-intro opacity-0" style="margin-top: 25px; padding-top: 10px; text-align: center;">
+						<span class="polyfy-title">
+							<br />
+							<span class="Accent" style="margin: 5%; padding: 5%; font-size: 50pt; text-shadow: 4px 4px 4px #ffffff; font-family: 'Montserrat', Arial; font-weight: bold;">
+								COMING SOON...
+							</span>
+							<hr style="margin-top: -1px; border: 1pt solid #808080; width: 50%;  box-shadow: 5px 25px 100px #ffffff; border-radius: 10px;" />
+							<br />
+						</span>
+					</h1>
+
+
+					<h1 class="text-intro opacity-0" style="margin-top: 25px; padding-top: 10px; text-align: center;">
+						<span class="polyfy-title">
+							<br />
+							<span class="AccentRed" style="margin: 5%; padding: 5%; font-size: 48pt; text-shadow: 5px 5px 5px white; font-family: 'Rock Salt', cursive; font-weight: bold;">
+								Island Anglers!
+							</span>
+
+						</span>
+
+					</h1>
+					<br /><br />
+
+					<p class="text-intro opacity-0">
+						<span style="color: white; font-size: 14pt; font-family: 'Montserrat', Arial; text-shadow: 1px 1px 1px gray;">
+							<br /><br />
+							An artfuly crafted, incredibly cool<br /> web space &amp; community for anglers and their pals.
+							<br /><br />
+							Wanna learn more?  Click <a href="#NewsLetter">here</a>
+						</span>
+					</p>
+
+					<br /><br />
+
+					<a href="#" id="open-more-info" data-target="info-wrap" class="light-btn text-intro opacity-0">
+						<span style="text-shadow: 1px 1px 1px lightgray;">
+							Tell Me More...
+						</span>
+					</a>
+
+					<a data-dialog="somedialog" class="action-btn trigger text-intro opacity-0">
+						<span style="text-shadow: 1px 1px 1px lightgray;">
+							Keep Me Notified!
+						</span>
+					</a>
+					<!-- /. content -->
+					<!-- Social icons -->
+					<div class="social-icons text-intro opacity-0">
+
+						<a href="#"><i class="fa fa-facebook"></i></a>
+						<a href="#"><i class="fa fa-twitter"></i></a>
+						<a href="#"><i class="fa fa-google-plus"></i></a>
+						<a href="#"><i class="fa fa-linkedin"></i></a>
+
+					</div> <!-- /. social-icons -->
+				</center>
+			</div>
+		</section>
+	</div>
+
+	<!-- END - Home Part -->
+	<!-- START - More Informations Part -->
+	<section id="info-wrap">
+
+		<div class="hero">
+
+			<div class="center-text">
+
+				<h3 class="darky">Everything you need.</h3>
+
+				<p>
+					Hi, <strong>We are</strong> the Island Anglers, your new
+				</p>
+
+			</div> <!-- /. center-text -->
+
+		</div> <!-- /. hero -->
+
+		<div class="content">
+
+			<div class="photo-line">
+
+				<div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+
+					<!-- Item -->
+					<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="col-xs-12 col-sm-6 col-lg-6 clear-second">
+
+						<!-- Link to the picture and to open the gallery / Fill up well the data-size property -->
+						<a class="box-picture" href="Images/IMG_7950.JPG" itemprop="contentUrl" data-size="1920x1280">
+
+							<!-- Your picture -->
+							<img src="Images/IMG_7950.JPG" itemprop="thumbnail" alt="This is my work" class="img-responsive" />
+							<div class="text-center">
+								<h4>The bridge</h4>
+								<p>May 14, 2016</p>
+							</div>
+
+						</a>
+
+						<!-- Picture's description for the gallery -->
+						<figcaption itemprop="caption description">
+
+							<div class="photo-details">
+
+								<h4>Fly in the sky</h4>
+
+								<span class="border"></span>
+
+								<p>This is what I love, and can't stop loving! I'm told to enjoy every moment, every hour, every minute.</p>
+
+							</div>
+
+						</figcaption>
+
+					</figure>
+
+					<!-- Item -->
+					<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="col-xs-12 col-sm-6 col-lg-6">
+
+						<!-- Link to the picture and to open the gallery / Fill up well the data-size property -->
+						<a class="box-picture" href="Images/IMG_7950.JPG" itemprop="contentUrl" data-size="1920x1280">
+
+							<!-- Your picture -->
+							<img src="Images/IMG_7950.JPG" itemprop="thumbnail" alt="This is my work" class="img-responsive" />
+							<div class="text-center">
+								<h4>Natural life</h4>
+								<p>July 26, 2016</p>
+							</div>
+
+						</a>
+
+						<!-- Picture's description for the gallery -->
+						<figcaption itemprop="caption description">
+
+							<div class="photo-details">
+
+								<h4>探索世界</h4>
+
+								<span class="border"></span>
+
+								<p>This is what I love, and can't stop loving! I'm told to enjoy every moment, every hour, every minute.</p>
+
+							</div>
+
+						</figcaption>
+
+					</figure>
+
+					<!-- Item -->
+					<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="col-xs-12 col-sm-6 col-lg-6 clear-second">
+
+						<!-- Link to the picture and to open the gallery / Fill up well the data-size property -->
+						<a class="box-picture" href="Images/gallery-3.jpg" itemprop="contentUrl" data-size="1920x1280">
+
+							<!-- Your picture -->
+							<img src="Images/gallery-3.jpg" itemprop="thumbnail" alt="This is my work" class="img-responsive" />
+							<span class="widget-angle-bottom-left">
+								<span class="icon-text">
+									<i class="icon ion-ios-star"></i>
+								</span>
+							</span>
+							<div class="text-center">
+								<h4>Architecture</h4>
+								<p>June 23, 2016</p>
+							</div>
+
+						</a>
+
+						<!-- Picture's description for the gallery -->
+						<figcaption itemprop="caption description">
+
+							<div class="photo-details">
+
+								<h4>Entre ciel et mer</h4>
+
+								<span class="border"></span>
+
+								<p>This is what I love, and can't stop loving! I'm told to enjoy every moment, every hour, every minute.</p>
+
+							</div>
+
+						</figcaption>
+
+					</figure>
+
+					<!-- Item -->
+					<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="col-xs-12 col-sm-6 col-lg-6">
+
+						<!-- Link to the picture and to open the gallery / Fill up well the data-size property -->
+						<a class="box-picture" href="Images/gallery-4.jpg" itemprop="contentUrl" data-size="1920x1280">
+
+							<!-- Your picture -->
+							<img src="Images/gallery-4.jpg" itemprop="thumbnail" alt="This is my work" class="img-responsive" />
+							<span class="widget-angle-top-right">
+								<span class="icon-text">
+									<i class="icon ion-ios-star"></i>
+								</span>
+							</span>
+							<div class="text-center">
+								<h4>The mountains</h4>
+								<p>December 24, 2016</p>
+							</div>
+
+						</a>
+
+						<!-- Picture's description for the gallery -->
+						<figcaption itemprop="caption description">
+
+							<div class="photo-details">
+
+								<h4>In einem Kokon</h4>
+
+								<span class="border"></span>
+
+								<p>This is what I love, and can't stop loving! I'm told to enjoy every moment, every hour, every minute.</p>
+
+							</div>
+
+						</figcaption>
+
+					</figure>
+
+				</div> <!-- /# my-gallery -->
+
+			</div> <!-- /. photo-line -->
+
+		</div> <!-- /. content -->
+
+		<div class="dark-hero">
+
+			<div class="center-text">
+
+				<h3 class="lighty">Get in touch!</h3>
+
+				<div class="info-contact row">
+
+					<div class="col-xs-12 col-sm-4 col-lg-4 item-map">
+						<div class="contact-item">
+							<i class="icon ion-ios-telephone"></i>
+							<p>
+								Phone: (+33) 66-1254-611
+								<br>Fax: (+38) 66-1254-989
+							</p>
+						</div>
+					</div>
+
+					<div class="col-xs-12 col-sm-4 col-lg-4 item-map">
+						<div class="contact-item">
+							<i class="icon ion-ios-location"></i>
+							<p>
+								Hobbemastraat 19,
+								<br>Amsterdam, NL
+							</p>
+						</div>
+					</div>
+
+					<div class="col-xs-12 col-sm-4 col-lg-4 item-map">
+						<div class="contact-item">
+							<i class="icon ion-ios-email"></i>
+							<p>
+								<a href="mailto:your-email@good.com">hiam@example.com</a>
+								<br><a href="mailto:your-email-pro@good.com">hiam-pro@example.com</a>
+							</p>
+						</div>
+					</div>
+
+				</div> <!-- /. info-contact -->
+
+			</div> <!-- /. center-text -->
+
+		</div> <!-- /. dark-hero -->
+
+		<div class="content-form no-padding-bottom">
+
+			<!-- START - Contact Form -->
+			<form id="contact-form" name="contact-form" method="POST" data-name="Contact Form">
+
+				<div class="row">
+
+					<!-- Full name -->
+					<div class="col-xs-12 col-sm-6 col-lg-6">
+						<div class="form-group">
+							<input type="text" id="name" class="form form-control" placeholder="Your Name*" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Name*'" name="name" data-name="Name" required>
+						</div>
+					</div>
+
+					<!-- E-mail -->
+					<div class="col-xs-12 col-sm-6 col-lg-6">
+						<div class="form-group">
+							<input type="email" id="email" class="form form-control" placeholder="Your Email*" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Email*'" name="email-address" data-name="Email Address" required>
+						</div>
+					</div>
+
+					<!-- Subject -->
+					<div class="col-xs-12 col-sm-12 col-lg-12">
+						<div class="form-group">
+							<input type="text" id="subject" class="form form-control" placeholder="Write the subject" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Write the subject'" name="subject" data-name="Subject">
+						</div>
+					</div>
+
+					<!-- Message -->
+					<div class="col-xs-12 col-sm-12 col-lg-12 no-padding">
+						<div class="form-group">
+							<textarea id="text-area" class="form textarea form-control" placeholder="Your message here*... 20 characters Min." onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your message here*... 20 characters Min.'" name="message" data-name="Text Area" required></textarea>
+						</div>
+					</div>
+
+				</div>
+
+				<!-- Button submit -->
+				<button type="submit" id="valid-form" class="btn btn-color">Send my Message</button>
+
+			</form>
+			<!-- END - Contact Form -->
+			<!-- !!! Answer for the contact form is displayed in the next div, do not remove it. -->
+			<div id="block-answer">
+
+				<div id="answer"></div>
+
+			</div>
+
+		</div> <!-- /. content-form -->
+
+		<footer style="background-color: #F0F5EE; color: white; font-size: 12pt; font-weight: bold;">
+
+			<p>©<span style="font-size: 14pt;"> 2017</span> Island Anglers    |    All Rights Reserved</p>
+			<br />
+			<center>
+				<img src="Images/ia-logo.png" alt="Island Anglers" class="brand-logo text-intro opacity-0" />
+			</center>
+		</footer>
+
+	</section>
+	<!-- END - More Informations Part -->
+	<!-- Button Cross to close the More Informations/Right Part -->
+	<div class="command-info-wrap">
+
+		<!-- Cross to close -->
+		<button class="to-close">
+			<i class="icon ion-close-round"></i>
+		</button>
+
+		<!-- Arrow going down -->
+		<div class="to-scroll" data-toggle="tooltip" data-placement="left" title="Scroll to see more...">
+			<i class="icon ion-arrow-down-c scroll-down"></i>
+		</div>
+
+	</div> <!-- /. command-info-wrap -->
+	<!-- START - Newsletter Popup -->
+	<div id="somedialog" class="dialog">
+
+		<div class="dialog__overlay"></div>
+
+		<div class="dialog__content">
+
+			<div class="dialog-inner">
+
+				<h4>Join the Island Anglers right now!</h4>
+
+				<p>Being the first to know always feels great... Signing up to our newsletter gives you <strong>exclusive access to our Grand Opening!</strong></p>
+
+				<!-- Newsletter Form -->
+				<div id="subscribe">
+
+					<form action="php/notify-me.php" id="notifyMe" method="POST">
+
+						<div class="form-group">
+
+							<div class="controls">
+
+								<!-- Field  -->
+								<input type="text" id="mail-sub" name="email" placeholder="Click here to write your email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Click here to write your email'" class="form-control email srequiredField" />
+
+								<!-- Spinner top left during the submission -->
+								<i class="fa fa-spinner opacity-0"></i>
+
+								<!-- Button -->
+								<button class="btn btn-lg submit">Get notified</button>
+
+								<div class="clear"></div>
+
+							</div>
+
+						</div>
+
+					</form>
+
+					<!-- Answer for the newsletter form is displayed in the next div, do not remove it. -->
+					<div class="block-message">
+
+						<div class="message">
+
+							<p class="notify-valid"></p>
+
+						</div>
+
+					</div>
+
+				</div>
+				<!-- /. Newsletter Form -->
+
+			</div>
+			<!-- /. dialog-inner -->
+			<!-- Button Cross to close the Newsletter Popup -->
+			<button class="close-newsletter" data-dialog-close><i class="icon ion-close-round"></i></button>
+
+		</div>
+		<!-- /. dialog__content -->
+
+	</div>
+	<!-- END - Newsletter Popup -->
+	<!-- Root element of PhotoSwipe, the gallery. Must have class pswp. -->
+	<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+		<!-- Background of PhotoSwipe.
+			It's a separate element as animating opacity is faster than rgba(). -->
+		<div class="pswp__bg"></div>
+
+		<!-- Slides wrapper with overflow:hidden. -->
+		<div class="pswp__scroll-wrap">
+
+			<!-- Container that holds slides.
+				PhotoSwipe keeps only 3 of them in the DOM to save memory.
+				Don't modify these 3 pswp__item elements, data is added later on. -->
+			<div class="pswp__container">
+				<div class="pswp__item"></div>
+				<div class="pswp__item"></div>
+				<div class="pswp__item"></div>
+			</div>
+
+			<!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+			<div class="pswp__ui pswp__ui--hidden">
+
+				<div class="pswp__top-bar">
+
+					<!--  Controls are self-explanatory. Order can be changed. -->
+
+					<div class="pswp__counter"></div>
+
+					<button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+					<button class="pswp__button pswp__button--share" title="Share"></button>
+
+					<button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+					<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+					<!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+					<!-- element will get class pswp__preloader--active when preloader is running -->
+					<div class="pswp__preloader">
+						<div class="pswp__preloader__icn">
+							<div class="pswp__preloader__cut">
+								<div class="pswp__preloader__donut"></div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+					<div class="pswp__share-tooltip"></div>
+				</div>
+
+				<button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+
+				<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+
+				<div class="pswp__caption">
+					<div class="pswp__caption__center"></div>
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<!-- /. Root element of PhotoSwipe. Must have class pswp. -->
+	<!-- ///////////////////\\\\\\\\\\\\\\\\\\\ -->
+	<!-- ********** Resources jQuery ********** -->
+	<!-- \\\\\\\\\\\\\\\\\\\/////////////////// -->
+	<!-- * Libraries jQuery, Easing and Bootstrap - Be careful to not remove them * -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.easings.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+	<!-- Accelerated JavaScript animation JS file -->
+	<script src="js/velocity.min.js"></script>
+
+	<!-- Accelerated JavaScript animation UI JS file -->
+	<script src="js/velocity.ui.min.js"></script>
+
+	<!-- Newsletter plugin -->
+	<script src="js/notifyMe.js"></script>
+
+	<!-- Contact form plugin -->
+	<script src="js/contact-me.js"></script>
+
+	<!-- Scroll plugin -->
+	<script src="js/jquery.mousewheel.js"></script>
+
+	<!-- Custom Scrollbar plugin -->
+	<script src="js/jquery.mCustomScrollbar.js"></script>
+
+	<!-- Popup Newsletter Form -->
+	<script src="js/classie.js"></script>
+	<script src="js/dialogFx.js"></script>
+
+	<!-- PhotoSwipe Core JS file -->
+	<script src="js/photoswipe.js"></script>
+
+	<!-- PhotoSwipe UI JS file -->
+	<script src="js/photoswipe-ui-default.js"></script>
+
+	<!-- Rain effect JS file -->
+	<script src="js/rain.min.js"></script>
+
+	<!--<script>
+		$(window).on('resize', function ()
+		{
+			var ratioMainImg = 1920 / 1280;
+			$("#rainy").width($(window).outerWidth());
+			$("#rainy").height($("#rainy").width() / ratioMainImg);
+
+			if ($("#rainy").height() <= $(window).outerHeight())
+			{
+				$("#rainy").height($(window).outerHeight());
+				$("#rainy").width($("#rainy").height() * ratioMainImg);
+			}
+
+			$("#rainy").css("left", $(window).outerWidth() * 0.5 - $("#rainy").width() * 0.5);
+			$("#rainy").css("top", $(window).outerHeight() * 0.5 - $("#rainy").height() * 0.5);
+		});
+
+		$(window).load(function ()
+		{
+			"use strict";
+
+			$(function () {
+				$(window).resize();
+			});
+		});
+	</script>-->
+	<!-- Main JS File -->
+	<script src="js/main.js"></script>
+
+	<!--[if lt IE 10]><script type="text/javascript" src="js/placeholder.js"></script><![endif]-->
+	<!-- Begin Newsletter -->
+	<div id="NewsLetter" class="popup" data-popup="popup-1">
+		<div class="popup-inner">
+			<h2 style="font-family: 'Rock Salt', cursive; color: white; font-size: 20pt; text-shadow: 3px 3px 3px gray; margin-top: -25px;">
+				<center><b>Newsletter Sign-up Form</b></center>
+			</h2>
+			<hr style="margin-top: -20px; box-shadow: 5px 5px 5px #333; border-color: red;" />
+			<span style="color: white; text-shadow: 1px 1px 1px gray; background: gray; margin: 25px; margin-top: -25px;">
+				<p style="margin-top: -25px; font-family: 'Montserrat', sans-serif; font-size: 14pt;">
+					Thank you for your interest in Island Anglers!  (We're excited too)
+				</p>
+				<br />
+				<!-- Begin Sign-up Form -->
+				<form class="modal-content animate" action="/action_page.php" style="margin-top: -25px;">
+					<div class="email-container">
+						<center>
+							<label style="font-family: 'Montserrat', open sans; font-size: 16pt; font-weight: bold; text-shadow: 2px 2px 2px gray; color: white;">
+								<b>
+									Please Enter Your Email Below Then Click Submit:
+								</b>
+								&nbsp;<input type="text" placeholder="Email Address" name="email" required>
+							</label>
+						</center>
+					</div>
+				</form>
+
+				<br />
+				<p style="font-size: 14pt">
+					We have all kinds of fun stuff planned for this site, but while we wait, stay in touch with us
+					through our Social Media links below:
+				</p>
+
+				<!-- Begin Social Icons -->
+				<span class="social-row">
+					<center>
+						<table style="width: 50%; text-align: center; margin-top: -5px;">
+							<tr>
+								<td>
+									<a href="https://www.facebook.com" target="_new" data-popup-close="popup-1">
+										<img src="http://www.islandanglers.net/imgs/facebook.png" alt="Facebook" width="50px" height="50px" />
+										<span style="font-family: 'Rock Salt', cursive;">
+
+										</span>
+									</a>
+								</td>
+								<td>
+									<a href="https://www.instagram.com" target="_new" data-popup-close="popup-1">
+										<img src="http://www.islandanglers.net/imgs/instagram.png" alt="Instagram" width="50px" height="50px" />
+										<span style="font-family: 'Rock Salt', cursive;">
+
+										</span>
+									</a>
+								</td>
+								<td>
+									<a href="https://www.twitter.com" target="_new" data-popup-close="popup-1" data-popup-close="popup-1">
+										<img src="http://www.islandanglers.net/imgs/twitter.png" alt="Twitter" width="50px" height="50px" />
+										<span style="font-family: 'Rock Salt', cursive;">
+
+										</span>
+									</a>
+								</td>
+
+								<td>
+									<a href="mailto:info@islandanglers.net?Subject=Island Angler - Contact Us" target="_new" data-popup-close="popup-1">
+										<img src="http://www.islandanglers.net/imgs/email-best.png" alt="Email Us" width="50px" height="50px" />
+										<span style="font-family: 'Rock Salt', cursive;">
+
+										</span>
+									</a>
+								</td>
+							</tr>
+						</table>
+					</center>
+				</span>
+			</span>
+
+
+			<table style="width: 100%; margin-top: -65px;">
+				<tr>
+					<td style="text-align: left; vertical-align: middle;">
+						<a data-popup-close="popup-1" href="#">
+							<img src="imgs/trash-xxl.png" width="50px" height="50px" href="#" />
+							<span style="font-family: 'Rock Salt', cursive; color: red;">Close</span>
+						</a>
+					</td>
+					<td style="text-align: right; vertical-align: middle;">
+						<a id="button-submit" onclick="document.getElementById('id01').style.display='block'" alt="Sign up!" style="color: #1FB25A">
+							<span style="font-family: 'Rock Salt', cursive; color: #1FB25A;">Submit</span>
+							<img src="imgs/submitButton-green.png" width="50px" height="50px" href="" />
+						</a>
+					</td>
+				</tr>
+			</table>
+
+			<!-- Top-Right Corner 'X' -->
+			<a class="popup-close" data-popup-close="popup-1" href="#">
+				x
+			</a>
+
+		</div>
+	</div>
+
+
+	<div class="container">
+		<nav id="bt-menu" class="bt-menu">
+			<a href="#" class="bt-menu-trigger">
+				<span>
+					Menu
+				</span>
+			</a>
+			<ul>
+				<li>
+					<a href="index.html">
+						Home
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						About Us
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						Newsletter
+					</a>
+				</li>
+				<li><a href="#">Photo's</a></li>
+				<li><a href="mailto:support@islandanglers.net?Subject=Island Anglers: Contact Form">Email Us</a></li>
+			</ul>
+			<ul>
+				<li>
+					<a href="http://www.twitter.com/IslandAnglers" class="bt-icon icon-twitter">
+						Twitter
+					</a>
+				</li>
+				<li>
+					<a href="https://plus.google.com/101095823814290637419" class="bt-icon icon-gplus">
+						Google+
+					</a>
+				</li>
+				<li>
+					<a href="http://www.facebook.com/pages/Codrops/159107397912" class="bt-icon icon-facebook">
+						Facebook
+					</a>
+				</li>
+				<li>
+					<a href="https://github.com/codrops" class="bt-icon icon-github">
+						Github
+					</a>
+				</li>
+			</ul>
+		</nav>
+
+	</div><!-- /container -->
+
+	<script type="text/javascript" src="AnimatedBorderMenus/js/classie.js"></script>
+	<script type="text/javascript" src="AnimatedBorderMenus/js/borderMenu.js"></script>
+
+
+</body>
+
+
+
+</html>

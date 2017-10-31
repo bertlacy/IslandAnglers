@@ -1,0 +1,31 @@
+﻿
+Accent = #0FE0BA
+
+Complimentary to Accent 'Red' = #E00F35
+
+Nearest HTML Color 'Crimson' = #DC143C 
+
+Triad Complimentary Color to Accent 'Blue' = #0F35E0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
